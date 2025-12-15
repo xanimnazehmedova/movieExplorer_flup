@@ -1,0 +1,113 @@
+body{
+    background-color: #030e31 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+}
+
+header .title{
+    color: bisque;
+    font-size: 40px;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.movie-item {
+    border-radius: 15px;
+    overflow: hidden; 
+    background-color: #05103a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.movie-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-item img {
+    border-radius: 15px;
+    width: 100%;
+    height: 270px; 
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #fff;
+}
+
+.movie-info h2 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.movie-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.fav-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.4);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fav-btn:hover {
+    background: rgba(255, 82, 82, 0.7);
+}
+
+.detail-btn {
+    margin: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: #0d1a4d;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.detail-btn:hover {
+    background: #152a78;
+}
+#movieModal .modal-body img {
+  max-width: 100%;      
+  max-height: 200px;   
+  object-fit: cover;    
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;      
+}
+#movieModal .modal-dialog {
+  max-width: 600px;   
+}
+.modal-body{
+    display: flex;
+    gap: 24px;
+}
